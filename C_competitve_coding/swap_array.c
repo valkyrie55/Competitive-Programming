@@ -7,10 +7,10 @@
 #include<stdlib.h>
 
 void swap(int *a, int *b){
-	int *temp;
-	temp = a;
-	a = b;
-	b = temp;
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 bool sorted(int arr[], int n){
