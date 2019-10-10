@@ -5,11 +5,11 @@ void count_fruits(int *apples, int * oranges, int m, int n, int a, int b, int s,
 	int i, count_apples =0, count_oranges =0;
 	//for apples
 	for(i=0;i<m;i++){
-		if(a + apples[i] >= s)
+		if(a + apples[i] >= s && a + apples[i] <= t)
 			count_apples++;
 	}
 	for(i=0;i<n;i++){
-		if(b + oranges[i] <= t)
+		if(b + oranges[i] <= t && b + oranges[i] >= s)
 			count_oranges++;
 	}
 	printf("\nTotal no of apples: %d \n Oranges %d", count_apples, count_oranges);
